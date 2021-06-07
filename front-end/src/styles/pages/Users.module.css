@@ -1,0 +1,36 @@
+.box > div{
+  padding: 0px !important;
+  overflow-y: inherit;  
+}
+
+.employeeData .dataBody p, .employeeData .dataBody strong {
+  line-height: 45px;
+}
+
+.employeeData .dataHeader h4, .employeeData .dataBody p{
+  color: var(--text);
+}
+
+.employeeData .dataBody strong{
+  font-weight: 500;
+}
+
+.employeeData .dataBody p {
+  font-size: 1rem;
+  line-height: 10px;
+}
+
+.firstDataBox{
+  margin-bottom: 1rem;
+}
+
+.secondDataBox{
+  margin-bottom: 1rem;
+}
+
+.delete {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+

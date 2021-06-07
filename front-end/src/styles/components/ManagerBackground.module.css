@@ -1,0 +1,49 @@
+.background {
+  background-color: var(--white);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.09);
+  padding: 1.3rem;
+  border-radius: 5px;
+
+  margin-bottom: 10px;
+}
+
+.headerUtility {
+  display: block;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.headerUtility .search > div {
+  margin: 0;
+  border-radius: 50px !important;
+
+  margin-bottom: 10px;
+}
+
+.headerUtility .btn {
+  display: grid;
+  flex-direction: row;
+  grid-template-rows: 1fr;
+}
+
+@media (min-width: 768px) {
+  .headerUtility {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr !important;
+  }
+
+  .headerUtility .search{
+    display: flex;
+    gap: 5px;
+  } 
+
+  .headerUtility .search > div {  
+    margin-bottom: 0px !important;
+  }
+
+  .headerUtility .btn {
+    display: flex;
+    justify-content: flex-end !important;
+  }
+}

@@ -1,0 +1,59 @@
+.createForm {
+  margin-bottom: 1rem;
+}
+
+.box > div{
+  padding: 0px !important;
+  overflow-y: inherit;  
+}
+
+.productData .dataHeader {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.productData .dataBody p, .productData .dataBody strong {
+  line-height: 45px;
+}
+
+.productData .dataHeader h4, .productData .dataBody p{
+  color: var(--text);
+}
+
+.productData .dataBody strong{
+  font-weight: 500;
+}
+
+.productData .dataBody p {
+  font-size: 1rem;
+  line-height: 10px;
+}
+
+.upload {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.upload img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.btn{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.delete {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .upload img {
+    width: 350px;
+    height: 350px;
+  }
+}
+

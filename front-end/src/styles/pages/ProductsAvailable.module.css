@@ -1,0 +1,143 @@
+.productList {
+  display: grid;
+  grid-template-columns: 1fr;
+  flex-direction: column;
+}
+
+.productList .product {
+  margin-bottom: 1rem;
+
+  background-color: var(--white);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.09);
+  padding: 0.9rem;
+  border-radius: 5px;
+
+  min-height: 500px;
+}
+
+.productList .product img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.productList .product .productInfo {
+  padding-top: 15px;
+  line-height: 30px;
+}
+
+.productList .product .productInfo h4, .product .productInfo strong {
+  color: var(--text);
+}
+
+.productList .product .productInfo h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: var(--purple);
+  font-weight: 500;
+}
+
+.productList .product .productInfo strong {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.productList .product .productBtn {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  padding-top: 15px;
+}
+
+.productReservation, .productSale{
+  display: grid;
+  margin-top: 15px;
+}
+
+.productReservation .inputBlock, .productSale .inputBlock, .paymentInputsData .inputBlock{
+  margin-bottom: 15px;
+}
+
+.productReservation, .productSale p {
+  color: var(--red);
+  margin-bottom: 1px;
+}
+
+.createDebtor, .paymentInputsData, .inputsDebtorData {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.payment, .createDebtor, .inputsDebtor, .inputsDebtorData, .client{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.inputsDebtor {
+  display: grid;
+  grid-template-columns: 11fr 1fr;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.warning {
+  margin-top: 15px;
+}
+
+.warning p {
+  color: var(--red);
+}
+
+@media (min-width: 769px) {
+
+  .productList {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1rem !important
+  }
+
+  .productReservation{
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 5px;
+  }
+
+  .paymentInputsData {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+
+  .inputsDebtorData {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+}
+
+@media (min-width: 1240px) {
+  .productList {
+    grid-template-columns: 1fr 1fr 1fr!important;
+  }
+
+  .productList .product img {
+    width: 100% !important;
+  }
+
+  .productList .product .productBtn {
+
+    grid-template-rows: none !important;
+
+    grid-template-columns: 1fr 1fr !important;
+    flex-direction: column !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .productList {
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  }
+}

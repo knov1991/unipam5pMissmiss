@@ -1,0 +1,17 @@
+.card {
+  border: 0 !important;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.09);
+}
+
+.card .cardText {
+  color: var(--text);
+}
+
+@media (min-width: 768px) {
+  .cardPaymentContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-items: center;
+  }
+}

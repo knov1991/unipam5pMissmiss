@@ -1,0 +1,18 @@
+.delete {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.warning {
+  color: var(--red);
+}
+
+.payment {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.payment .inputBlock  {
+  display: grid;
+  margin-bottom: 10px;
+}

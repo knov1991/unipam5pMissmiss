@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  flex-direction: row;
+}
+
+.content .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.content .error img {
+  width: 300px;
+}
+
+.content .message {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .btn a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .content .error img {
+    width: 500px !important;
+  }
+}

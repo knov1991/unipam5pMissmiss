@@ -1,0 +1,35 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.tablesDetails, .accountsPayable {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  margin-top: 30px;
+}
+
+.tablesDetails .table, .accountsPayable {
+  background-color: var(--white);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.09);
+  padding: 1.3rem;
+  border-radius: 5px;
+}
+
+.table .tableTitle {
+  color: var(--text);
+}
+
+@media (min-width: 769px) {
+  .cardContainer {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+  
+}

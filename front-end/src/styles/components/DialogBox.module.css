@@ -1,0 +1,39 @@
+.modal {
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.modalTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px; 
+
+}
+
+.modalTitle h4 {
+  font-size: 1.4rem;
+  color: var(--purple);
+  line-height: 35px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+.modalBody form > div {
+  padding: 0px !important;
+  overflow-y: inherit;
+}
+
+.marginModal {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+@media (min-width: 768px) {
+  .modalTitle {
+    display: flex;
+    justify-content: flex-start !important;
+  }
+
+}

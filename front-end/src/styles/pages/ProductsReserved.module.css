@@ -1,0 +1,157 @@
+.productList .productReserved {
+  background: var(--white);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09) !important;
+  border-radius: 5px !important;
+  padding: 20px !important;
+} 
+
+.productList .productReserved {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 10px;
+
+  gap: 20px;
+}
+
+.productReservationData {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 10px;
+}
+
+.productList .productHeader strong{
+  font-weight: 500;
+}
+
+.productList .productBody strong {
+  font-weight: 400;
+}
+
+.productList .productHeader, .productList .productBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.productList .productReserved .productInfo {
+  display: grid;
+  justify-content: space-between;
+}
+
+.productList .productReserved .productInfo strong {
+  font-weight: 500;
+}
+
+.productList .productReserved .productBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.warning {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cancelText {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.clientDetails, .payment, .createDebtor, .inputsDebtor, .inputsDebtorData, .createDebtor{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.clientDetails .inputBlock, .paymentInputsData .inputBlock, .inputsDebtorData .inputBlock, .createDebtor .inputBlock {
+  margin-bottom: 15px;
+}
+
+.inputsDebtor {
+  display: grid;
+  grid-template-columns: 11fr 1fr;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsappButton button svg{
+  font-size: 1.4rem;
+}
+
+.whatsappButton button {
+  width: 100%;
+}
+
+.whatsappButton {
+  margin-bottom: 20px;
+ }
+
+.whatsappButton p{
+  line-height: 35px;
+}
+
+@media (min-width: 600px) {
+  .productList {
+    display: block !important;
+  } 
+
+  
+  .productList .productReserved {
+    grid-template-columns: 2fr 1fr !important;
+  }
+
+  .productList .productReserved .productInfo {
+    display: grid !important;
+    flex-direction: column !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    
+    justify-content: space-between !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .productList .productReserved .productBtn {
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    gap: 10px !important;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .productReservation{
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+
+  .paymentInputsData {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+
+  .inputsDebtorData {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  .clientDetails {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1440px) {
+
+}

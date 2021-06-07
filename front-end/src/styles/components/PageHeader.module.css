@@ -1,0 +1,25 @@
+.header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.header p {
+  font-size: 1rem;
+}
+
+.header h2, .header p {
+  color: var(--text);
+}
+
+.header button {
+  margin-bottom: 20px;
+}
+
+.header a {
+  text-decoration: none;
+}

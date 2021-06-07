@@ -1,0 +1,13 @@
+.productFilter {
+  margin-bottom: 1rem;
+
+  padding: 5px 15px 5px;
+  background: var(--white);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+}
+
+.productFilter .searchForm .inputBlock {
+  display: flex;
+  justify-content: flex-end;
+}
